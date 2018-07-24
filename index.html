@@ -16,14 +16,24 @@
             left:50%;
             transform: translateX(-50%) translateY(-50%);
             text-align: center;
-            background: #f9eeb1;
+            background: #ffffff ;
             border: 2px solid #ffffff;
             padding: 10px;
             box-shadow: 0 0 5px 3px #f4d942;
         }
+        .countDownContainer span{
+            size:5px;
+        }
+        #googleplay{
+            background:url(gp.png);
+            display: block;
+            width:10px;
+            height:10px;
+            float:left;
+        }
         .info{
             font-size: 30px;
-        }       
+        }               
         .twitterFeedContainer{
             position:absolute;
             top: 30%;
@@ -32,7 +42,7 @@
             width: 400px;
             height: 550px;
             text-align: left;
-            background: #f9eeb1;
+            background: #b1d6f9;
             border: 2px solid #ffffff;
             padding: 5px;
             box-shadow: 0 0 5px 3px #f4d942;
@@ -87,7 +97,11 @@
         <iframe frameborder="0" width="100%" height="100%" src="http://sundayyellow.tweetwally.com/embed" target="_blank" align="center" scrolling="Auto"></iframe>
     </div>
 
-    <table class="countDownContainer">
+    <div class="countDownContainer">
+        <a href="http://listenradio.jp/" target="_blank">
+            <img src="radiologo.png" alt="ListenRadio Logo">
+        </a>
+    <table>
         <tr class="info">
             <td colspan="4">RADIO APPEARANCE</td>                    
         </tr> 
@@ -104,7 +118,10 @@
             <td>Minutes</td>
             <td>Seconds</td>
         </tr>
-    </table>
+    </table>   
+    <span id="googleplay"></span> 
+    </div>
+    
 
 
     <script type="text/javascript">
