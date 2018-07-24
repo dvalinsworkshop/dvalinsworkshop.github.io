@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Navi Navi</title>
+    <title>Navi Navi</title>          
     <style type="text/css">
         body{
             background: #000000;
@@ -76,6 +76,7 @@
     </video>
 <div class="topMenuContainer">
     <img id="logo" src="navilogo.png" alt="navilogo">
+    <img data-online-image="navilogoLIVE.png" data-offline-image="navilogo.png">
    
         <a href="https://www.youtube.com/channel/UCL9lr2foHrmZg2A3MOng4bQ" target"_blank"><img src="yt.png" alt="youtube"></a>
         <a href="https://twitter.com/sunday__yellow" target"_blank"><img src="tw.png" alt="twitter"></a>
@@ -123,8 +124,21 @@
     </figure>
     </div>
 
-    
+<!--
+<script type="text/javascript">
+    function twitchLiveCheck() {
+        $.getJSON('https://api.twitch.tv/kraken/streams/navi_ch', function (channel) {
+            if (channel["stream"] == null) {
+                alert("ja");
 
+            } else {
+                alert("nej");
+
+            }
+        });
+    }
+    twitchLiveCheck();
+</script>-->
 
     <script type="text/javascript">
         function countdown() {
@@ -208,5 +222,6 @@
         countdown();
     </script>
     -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </body>
 </html>
